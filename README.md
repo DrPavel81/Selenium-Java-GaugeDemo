@@ -1,14 +1,54 @@
-## Gauge Demo
+# Selenium-Java-GaugeDemo
 
-The repository contains sample test application for site automationpractice.com.
+This repository contains a Selenium project using Java and Gauge for automated testing. The project demonstrates setting up a test framework, writing test cases, and executing them with Gauge.
 
-### Specifications
+## Libraries and Tools Used
 
-* This demo includes a sample specification which opens up a browser and showcases two spec examples.
+- Selenium WebDriver
+- Gauge
+- Java
+- Maven
 
-### Writing the implementations
+## Requirements
 
-This is where the java implementation of the steps would be implemented. Since this is a Selenium based project, the java implementation would invoke Selenium APIs as required.
+- JDK 11 or higher
+- Maven 3.6.0 or higher
+- ChromeDriver (compatible with your version of Chrome)
+- Gauge
 
-- Note that every Gauge step implementation is annotated with a `Step` attribute that takes the Step text pattern as a parameter.
-Read more about [Step implementations in Java](http://getgauge.io/documentation/user/current/test_code/java/java.html)
+## Setup
+
+1. **Clone the repository.**
+
+    ```shell
+    git clone https://github.com/DrPavel81/Selenium-Java-GaugeDemo.git
+    cd Selenium-Java-GaugeDemo
+    ```
+
+2. **Install the required Maven packages.**
+
+    ```shell
+    mvn clean install
+    ```
+
+3. **Download and set up ChromeDriver.**
+
+    - Ensure you have [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) installed.
+    - Update the `chromedriver` path in your configuration files if necessary.
+
+4. **Install Gauge.**
+
+    Follow the instructions on the [Gauge installation page](https://docs.gauge.org/getting_started/installing-gauge.html) to install Gauge.
+
+5. **Install Gauge Java plugin.**
+
+    ```shell
+    gauge install java
+    ```
+
+## Running the Tests
+
+To execute the tests, run:
+
+```shell
+mvn test
